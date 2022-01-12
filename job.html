@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+
+  <!-- Google fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Mulish:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- font awesome css -->
+  <link rel="stylesheet" href="./assets/css/all.min.css">
+
+  <!-- Css Link -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/responsive.css">
+
+
+  <title>Job Page</title>
+</head>
+
+<body>
+  <!--header -->
+  <header>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-dark fixed-top scroll-bg">
+      <div class="container">
+        <a class="navbar-brand me-0" href="#"><img src="./assets/img/logo.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          </span><i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav nav-list me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Jobs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav nav-list-right ms-auto mb-2 mb-lg-0 right-nav" id="right-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                EN
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Gujarati</a></li>
+                <li><a class="dropdown-item" href="#">Hindi</a></li>
+                <li><a class="dropdown-item" href="#">Russian</a></li>
+                <li><a class="dropdown-item" href="#">French</a></li>
+                <li><a class="dropdown-item" href="#">Italian</a></li>
+                <li><a class="dropdown-item" href="#">Spanish</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-user">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>Sign In
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- end header -->
+
+  <!-- job detail section -->
+  <section id="job-information">
+    <div class="container">
+      <div class="job-content">
+        <h2>Find your job</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+          the industry's standard dummy text ever since the 1500s.</p>
+      </div>
+      <form action="">
+        <div class="row g-3">
+          <div class="col-sm">
+            <div class="input-box1">
+              <input type="text" class="form-control" placeholder="Search job" aria-label="City">
+              <img src="./assets/img/search.png" alt="">
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="input-box2 position-relative">
+              <input type="text" class="form-control" placeholder="Location" aria-label="State">
+              <img src="./assets/img/map.png" alt="">
+            </div>
+          </div>
+          <div class="col-sm-1 input-box3">
+            <button class="search-btn position-relative btn btn-primary"><img src="./assets/img/search-white.png"
+                alt=""></button>
+          </div>
+        </div>
+      </form>
+      <div class="btn-box">
+        <div class="btn-group" role="group">
+          <button id="btnGroupDrop1" type="button" class="btn btn-outline-light dropdown-toggle me-3"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Price Range
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <li><a class="dropdown-item" href="#">Item 1</a></li>
+            <li><a class="dropdown-item" href="#">Item 2</a></li>
+            <li><a class="dropdown-item" href="#">Item 3</a></li>
+          </ul>
+        </div>
+        <div class="btn-group" role="group">
+          <button id="btnGroupDrop1" type="button" class="btn btn-outline-light dropdown-toggle"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Less than 1 hour
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <li><a class="dropdown-item" href="#">Item 1</a></li>
+            <li><a class="dropdown-item" href="#">Item 2</a></li>
+            <li><a class="dropdown-item" href="#">Item 3</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end job detail section -->
+
+  <!-- job data section -->
+  <section id="job-data">
+    <div class="container">
+      <p><a href="#">Showing 70 results</a></p>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card">
+            <h5>Kitchen Repair</h5>
+            <div class="data-dis data-dis1">
+              <div class="data-item data-item1">
+                <span class="item-value">$500</span>
+                <small class="item-name">Amount</small>
+              </div>
+              <div class="data-item data-item2">
+                <span class="item-value">Greenwood</span>
+                <small class="item-name">Location</small>
+              </div>
+            </div>
+            <div class="data-dis data-dis2">
+              <div class="timmer">
+                <div class="data-item data-item3">
+                  <span class="item-value">08</span>
+                  <small class="item-name">Hour</small>
+                </div>
+                <div class="data-item data-item3">
+                  <span class="item-value devider">:</span>
+                </div>
+                <div class="data-item data-item4">
+                  <span class="item-value">00</span>
+                  <small class="item-name">Mins</small>
+                </div>
+                <div class="data-item data-item3">
+                  <span class="item-value devider">:</span>
+                </div>
+                <div class="data-item data-item5">
+                  <span class="item-value">00</span>
+                  <small class="item-name">Sec</small>
+                </div>
+              </div>
+              <div>
+                <button class="btn btn-info">Bid Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card">
+            <h5>House Renovation</h5>
+            <div class="data-dis data-dis1">
+              <div class="data-item data-item1">
+                <span class="item-value">$340</span>
+                <small class="item-name">Amount</small>
+              </div>
+              <div class="data-item data-item2">
+                <span class="item-value">Greenwood</span>
+                <small class="item-name">Location</small>
+              </div>
+            </div>
+            <div class="data-dis data-dis2">
+              <div class="timmer">
+                <div class="data-item data-item3">
+                  <span class="item-value">08</span>
+                  <small class="item-name">Hour</small>
+                </div>
+                <div class="data-item data-item3">
+                  <span class="item-value devider">:</span>
+                </div>
+                <div class="data-item data-item4">
+                  <span class="item-value">00</span>
+                  <small class="item-name">Mins</small>
+                </div>
+                <div class="data-item data-item3">
+                  <span class="item-value devider">:</span>
+                </div>
+                <div class="data-item data-item5">
+                  <span class="item-value">00</span>
+                  <small class="item-name">Sec</small>
+                </div>
+              </div>
+              <div>
+                <button class="btn btn-info">Bid Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card">
+            <h5>Bathroom Repair</h5>
+            <div class="data-dis data-dis1">
+              <div class="data-item data-item1">
+                <span class="item-value">$370</span>
+                <small class="item-name">Amount</small>
+              </div>
+              <div class="data-item data-item2">
+                <span class="item-value">Greenwood</span>
+                <small class="item-name">Location</small>
+              </div>
+            </div>
+            <div class="data-dis data-dis2">
+              <div class="timmer">
+                <div class="data-item data-item3">
+                  <span class="item-value">08</span>
+                  <small class="item-name">Hour</small>
+                </div>
+                <div class="data-item data-item3">
+                  <span class="item-value devider">:</span>
+                </div>
+                <div class="data-item data-item4">
+                  <span class="item-value">00</span>
+                  <small class="item-name">Mins</small>
+                </div>
+                <div class="data-item data-item3">
+                  <span class="item-value devider">:</span>
+                </div>
+                <div class="data-item data-item5">
+                  <span class="item-value">00</span>
+                  <small class="item-name">Sec</small>
+                </div>
+              </div>
+              <div>
+                <button class="btn btn-info">Bid Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card">
+            <h5>Interior Design</h5>
+            <div class="data-dis data-dis1">
+              <div class="data-item data-item1">
+                <span class="item-value">$460</span>
+                <small class="item-name">Amount</small>
+              </div>
+              <div class="data-item data-item2">
+                <span class="item-value">Greenwood</span>
+                <small class="item-name">Location</small>
+              </div>
+            </div>
+            <div class="data-dis data-dis2">
+              <div class="timmer">
+                <div class="data-item data-item3">
+                  <span class="item-value">08</span>
+                  <small class="item-name">Hour</small>
+                </div>
+                <div class="data-item data-item3">
+                  <span class="item-value devider">:</span>
+                </div>
+                <div class="data-item data-item4">
+                  <span class="item-value">00</span>
+                  <small class="item-name">Mins</small>
+                </div>
+                <div class="data-item data-item3">
+                  <span class="item-value devider">:</span>
+                </div>
+                <div class="data-item data-item5">
+                  <span class="item-value">00</span>
+                  <small class="item-name">Sec</small>
+                </div>
+              </div>
+              <div>
+                <button class="btn btn-info">Bid Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card">
+            <h5>Bedroom Interier Design</h5>
+            <div class="data-dis data-dis1">
+              <div class="data-item data-item1">
+                <span class="item-value">$330</span>
+                <small class="item-name">Amount</small>
+              </div>
+              <div class="data-item data-item2">
+                <span class="item-value">Greenwood</span>
+                <small class="item-name">Location</small>
+              </div>
+            </div>
+            <div class="data-dis data-dis2">
+              <div class="timmer">
+                <div class="data-item data-item3">
+                  <span class="item-value">08</span>
+                  <small class="item-name">Hour</small>
+                </div>
+                <div class="data-item data-item3">
+                  <span class="item-value devider">:</span>
+                </div>
+                <div class="data-item data-item4">
+                  <span class="item-value">00</span>
+                  <small class="item-name">Mins</small>
+                </div>
+                <div class="data-item data-item3">
+                  <span class="item-value devider">:</span>
+                </div>
+                <div class="data-item data-item5">
+                  <span class="item-value">00</span>
+                  <small class="item-name">Sec</small>
+                </div>
+              </div>
+              <div>
+                <button class="btn btn-info">Bid Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card">
+            <h5>Interior Design</h5>
+            <div class="data-dis data-dis1">
+              <div class="data-item data-item1">
+                <span class="item-value">$480</span>
+                <small class="item-name">Amount</small>
+              </div>
+              <div class="data-item data-item2">
+                <span class="item-value">Greenwood</span>
+                <small class="item-name">Location</small>
+              </div>
+            </div>
+            <div class="data-dis data-dis2">
+              <div class="timmer">
+                <div class="data-item data-item3">
+                  <span class="item-value">08</span>
+                  <small class="item-name">Hour</small>
+                </div>
+                <div class="data-item data-item3">
+                  <span class="item-value devider">:</span>
+                </div>
+                <div class="data-item data-item4">
+                  <span class="item-value">00</span>
+                  <small class="item-name">Mins</small>
+                </div>
+                <div class="data-item data-item3">
+                  <span class="item-value devider">:</span>
+                </div>
+                <div class="data-item data-item5">
+                  <span class="item-value">00</span>
+                  <small class="item-name">Sec</small>
+                </div>
+              </div>
+              <div>
+                <button class="btn btn-info">Bid Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card">
+            <h5>Bathroom Repair</h5>
+            <div class="data-dis data-dis1">
+              <div class="data-item data-item1">
+                <span class="item-value">$460</span>
+                <small class="item-name">Amount</small>
+              </div>
+              <div class="data-item data-item2">
+                <span class="item-value">Greenwood</span>
+                <small class="item-name">Location</small>
+              </div>
+            </div>
+            <div class="data-dis data-dis2">
+              <div class="timmer">
+                <div class="data-item data-item3">
+                  <span class="item-value">08</span>
+                  <small class="item-name">Hour</small>
+                </div>
+                <div class="data-item data-item3">
+                  <span class="item-value devider">:</span>
+                </div>
+                <div class="data-item data-item4">
+                  <span class="item-value">00</span>
+                  <small class="item-name">Mins</small>
+                </div>
+                <div class="data-item data-item3">
+                  <span class="item-value devider">:</span>
+                </div>
+                <div class="data-item data-item5">
+                  <span class="item-value">00</span>
+                  <small class="item-name">Sec</small>
+                </div>
+              </div>
+              <div>
+                <button class="btn btn-info">Bid Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card">
+            <h5>Home Renovation</h5>
+            <div class="data-dis data-dis1">
+              <div class="data-item data-item1">
+                <span class="item-value">$330</span>
+                <small class="item-name">Amount</small>
+              </div>
+              <div class="data-item data-item2">
+                <span class="item-value">Greenwood</span>
+                <small class="item-name">Location</small>
+              </div>
+            </div>
+            <div class="data-dis data-dis2">
+              <div class="timmer">
+                <div class="data-item data-item3">
+                  <span class="item-value">08</span>
+                  <small class="item-name">Hour</small>
+                </div>
+                <div class="data-item data-item3">
+                  <span class="item-value devider">:</span>
+                </div>
+                <div class="data-item data-item4">
+                  <span class="item-value">00</span>
+                  <small class="item-name">Mins</small>
+                </div>
+                <div class="data-item data-item3">
+                  <span class="item-value devider">:</span>
+                </div>
+                <div class="data-item data-item5">
+                  <span class="item-value">00</span>
+                  <small class="item-name">Sec</small>
+                </div>
+              </div>
+              <div>
+                <button class="btn btn-info">Bid Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card">
+            <h5>Tiles Repair</h5>
+            <div class="data-dis data-dis1">
+              <div class="data-item data-item1">
+                <span class="item-value">$480</span>
+                <small class="item-name">Amount</small>
+              </div>
+              <div class="data-item data-item2">
+                <span class="item-value">Greenwood</span>
+                <small class="item-name">Location</small>
+              </div>
+            </div>
+            <div class="data-dis data-dis2">
+              <div class="timmer">
+                <div class="data-item data-item3">
+                  <span class="item-value">08</span>
+                  <small class="item-name">Hour</small>
+                </div>
+                <div class="data-item data-item3">
+                  <span class="item-value devider">:</span>
+                </div>
+                <div class="data-item data-item4">
+                  <span class="item-value">00</span>
+                  <small class="item-name">Mins</small>
+                </div>
+                <div class="data-item data-item3">
+                  <span class="item-value devider">:</span>
+                </div>
+                <div class="data-item data-item5">
+                  <span class="item-value">00</span>
+                  <small class="item-name">Sec</small>
+                </div>
+              </div>
+              <div>
+                <button class="btn btn-info">Bid Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- end job data section -->
+
+  <!-- page section -->
+  <div class="container">
+    <nav aria-label="Page navigation">
+      <ul class="pagination justify-content-center">
+        <li class="page-item">
+          <a class="page-link arrow-link" href="#" aria-label="Previous">
+            <img src="./assets/img/left-arrow.png" alt="">
+          </a>
+        </li>
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">4</a></li>
+        <li class="page-item"><a class="page-link" href="#">5</a></li>
+        <li class="page-item"><a class="page-link" href="">...</a></li>
+        <li class="page-item"><a class="page-link" href="#">15</a></li>
+        <li class="page-item">
+          <a class="page-link arrow-link" href="#" aria-label="Next">
+            <img src="./assets/img/right-arrow.png" alt="">
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- end page section -->
+
+  <!-- footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-xl-6">
+          <ul class="footer-menu">
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-xl-3">
+          <p>Copyright © 2021. All Rights Reserved.</p>
+        </div>
+        <div class="col-lg-6 col-xl-3">
+          <ul class="footer-social">
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-container d-flex justify-content-between align-items-center">
+
+
+
+      </div>
+    </div>
+  </footer>
+  <!-- end footer -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
+  </script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+
+    <title>Hello, world!</title>
+
+    <style>
+        .modal .btn-box {
+            display: flex;
+            width: 100%;
+            /* border: 1px solid red !important; */
+        }
+
+        .modal .btn-box button {
+            color: #8b8a88;
+            background: #e9ebee;
+        }
+
+        .modal form {
+            margin-top: 50px;
+        }
+
+        .modal .material-icons {
+            color: #b6b5b5;
+            position: absolute;
+            top: 50%;
+            left: 7px;
+            transform: translateY(-50%);
+        }
+
+        .modal input.form-control {
+            padding-left: 40px;
+        }
+
+        .modal .btn-box button {
+            width: 50%;
+            padding: 10px;
+            font-weight: 600;
+            border: none;
+        }
+
+        .modal button.active {
+            background: transparent;
+            border: none;
+            border-top: 3px solid #1b9c5c;
+            color: #555555;
+        }
+
+        .modal .btn-success {
+            color: #fff;
+            background-color: #4d9e46;
+            font-weight: 600;
+            border-color: #146c43;
+        }
+
+        .modal span.material-icons {
+            color: #979FAD;
+        }
+
+        .modal .btn-success {
+            background: linear-gradient(#30ba65, #1f9e60);
+            height: 40px;
+            border: 1px solid #1b9c5c;
+        }
+
+        .modal p a {
+            color: #1b9c5c !important;
+            text-decoration: none;
+        }
+
+        .modal p a.forgot-btn {
+            color: #9a9fb1 !important;
+        }
+
+        .modal h6 {
+            text-align: center;
+            margin: 20px auto;
+            position: relative;
+        }
+
+        .modal h6::before,
+        .modal h6::after {
+            content: "";
+            background: #979fae;
+            height: 2px;
+            width: 40%;
+            position: absolute;
+            top: 50%;
+            right: 30px;
+        }
+
+        .modal h6::after {
+            left: 30px;
+        }
+
+        .modal .text-success {
+            color: #3fda92 !important;
+            text-align: center;
+            font-weight: 500;
+            text-transform: capitalize;
+        }
+
+        .modal p.samll {
+            font-size: 14px;
+            text-align: center;
+            text-transform: capitalize;
+        }
+
+        p.samll a.text-success {
+            color: #1b9c5c;
+        }
+
+        .modal .social-box {
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .modal .social-box button {
+            width: 48%;
+            font-weight: 500;
+            color: #fff;
+            padding: 10px 10px 10px 40px;
+            position: relative;
+        }
+
+        .modal .social-box span {
+            width: 40px;
+            display: inline-block;
+            border-right: 1px solid #333;
+            position: absolute;
+            left: 0px;
+            font-size: 24px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .modal .col {
+            flex: unset;
+        }
+
+        .modal .social-box-2 {
+            margin-top: 20px;
+        }
+
+        .modal .g-btn {
+            background: linear-gradient(#da4c44, #c54b45);
+            border: 1px solid #c54b45;
+        }
+
+        .modal .fb-btn {
+            background: linear-gradient(#4a679d, #436198);
+            border: 1px solid #436198;
+        }
+
+        .modal .li-btn {
+            background: linear-gradient(#0773ab, #0b608f);
+            border: 1px solid #1f1e1e;
+        }
+
+        .modal .gh-btn {
+            background: linear-gradient(#444040, #222021);
+            border: 1px solid #222021;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#inviteyou">
+        Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="inviteyou" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="btn-box">
+                        <button class="active">Sing-In</button>
+                        <button>Sing-Out</button>
+                    </div>
+                    <div class="invite-form">
+                        <form>
+                            <div class="mb-3 position-relative">
+                                <input type="email" class="form-control" id="emailinput"
+                                    placeholder="Username or email">
+                                <span class="material-icons">account_circle</span>
+                            </div>
+                            <div class="mb-3 position-relative">
+                                <input type="password" class="form-control" id="passwordinput" placeholder="Password">
+                                <span class="material-icons">lock</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                                </div>
+                                <p><a href="#" class="forgot-btn">Forgot Password</a></p>
+                            </div>
+                            <button type="submit" class="btn btn-success w-100">Sign In</button>
+                        </form>
+                        <h6>or</h6>
+                        <div class="social-box social-box-1 row g-0">
+                            <button class="col g-btn"><span><i class="fab fa-google"></i></span>
+                                Google
+                            </button>
+                            <button class="col fb-btn"><span><i class="fab fa-facebook-f"></i></span>
+                                Facebook
+                            </button>
+                            <button class="col li-btn mt-3 mb-3"><span><i class="fab fa-linkedin-in"></i></span>
+                                LinkedIn
+                            </button>
+                            <button class="col gh-btn mt-3 mb-3">
+                                <span><i class="fab fa-github"></i></span>
+                                GitHub
+                            </button>
+                        </div>
+                        <p class="text-success"><a href="">why create an account?</a></p>
+                        <p class="samll">By creating this account you argee to our <a href=""
+                                class="text-success">Privacy Policy & Cookie Policy</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+
+</body>
+
+</html>
