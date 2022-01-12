@@ -1,4 +1,8 @@
 @media screen and (min-width:320px) and (max-width:768px) {
+    
+      html {
+        overflow-x: hidden;
+    }
 
     #navbar ul.navbar-nav {
         margin-left: 0px;
@@ -71,7 +75,7 @@
 @media screen and (min-width:320px) and (max-width:567.9px) {
     .hero-content h1 {
         max-width: 400px;
-        font-size: 30px;
+        font-size: 27px;
         line-height: 38px;
     }
 
